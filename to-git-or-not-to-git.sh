@@ -1,0 +1,1 @@
+curl -s https://learn.01founders.co/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{login:{_eq:\"jkalombo\"}}){id}}"}' | jq '.data.user [0].id'
