@@ -1,1 +1,1 @@
-find -name "*.sh" | tr -d ".sh/" | sort -rgit
+find -name "*.sh" | tr -d ".sh/" | sort -r
