@@ -1,1 +1,1 @@
-find $PWD \(-type f -or -type d\) -name ".*" -prune -o -print |wc -l
+find . \( -type f -or -type d \) -and \( -not -path "*/." \) |wc -l
