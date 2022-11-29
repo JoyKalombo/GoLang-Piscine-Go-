@@ -1,1 +1,1 @@
-ls -mcp | tr -d ' '
+ls -m -c -p | tr -d ' '
