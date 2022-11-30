@@ -1,1 +1,1 @@
-find -name "*.sh" | tr -d ".sh/" | sort -r
+find -name "*.sh" -exec basename {} .sh ";" | sort -r
