@@ -1,19 +1,15 @@
 package piscine
 
-func Swap(a *int, b *int) {
-
-	c := *a
-	*a = *b 
-	*b = c
-	
-}
-
-// package main
-
 // import (
 // 	"fmt"
 // 	"piscine"
 // )
+
+func Swap(a *int, b *int) {
+	c := *a
+	*a = *b
+	*b = c
+}
 
 // func main() {
 // 	a := 0
