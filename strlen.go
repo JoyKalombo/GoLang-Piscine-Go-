@@ -7,12 +7,9 @@ package piscine
 // )
 
 func StrLen(s string) int {
-	
-	countbites:= []rune(s)
+	countbites := []rune(s)
 	return len(countbites)
 }
-
-
 
 // func main() {
 // 	l := piscine.StrLen("Hello World!")
