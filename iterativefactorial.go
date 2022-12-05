@@ -1,6 +1,6 @@
 package piscine
 
-//package main
+// package main
 
 // import (
 // 	"fmt"
