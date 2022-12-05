@@ -1,19 +1,15 @@
-// package piscine
+package piscine
 
-package main
+// import "fmt"
 
-import (
-	"fmt"
-)
+// package main
 
 func IterativePower(nb int, power int) int {
 	result := nb
-	if nb == 1 || (nb != 0 && power == 0) {
+	if nb == 1 || power == 0 {
 		return 1
 	} else if (nb == 0 && power != 0) || power < 0 {
 		return 0
-	} else if nb == 0 && power == 0 {
-		fmt.Println("error")
 	} else {
 		for i := 1; i <= power-1; i++ {
 			result = result * nb
@@ -22,6 +18,6 @@ func IterativePower(nb int, power int) int {
 	return result
 }
 
-func main() {
-	fmt.Println(IterativePower(0, 0))
-}
+// func main() {
+// 	fmt.Println(IterativePower(0, 0))
+// }
