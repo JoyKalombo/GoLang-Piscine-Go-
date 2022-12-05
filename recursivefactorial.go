@@ -1,10 +1,10 @@
-// package piscine
+package piscine
 
-package main
+// package main
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 func RecursiveFactorial(nb int) int {
 	if nb == 0 {
@@ -16,7 +16,7 @@ func RecursiveFactorial(nb int) int {
 	}
 }
 
-func main() {
-	arg := -7
-	fmt.Println(RecursiveFactorial(arg))
-}
+// func main() {
+// 	arg := -7
+// 	fmt.Println(RecursiveFactorial(arg))
+// }
