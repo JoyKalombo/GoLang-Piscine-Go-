@@ -14,7 +14,6 @@ func ToUpper(s string) string {
 		} else {
 			storagestring = storagestring + string(rune(i))
 		}
-	
 	}
 	return storagestring
 }
