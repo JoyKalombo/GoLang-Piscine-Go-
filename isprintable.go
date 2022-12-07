@@ -1,8 +1,8 @@
-package main
+// package main
 
-// package piscine
+package piscine
 
-import "fmt"
+// import "fmt"
 
 func IsPrintable(s string) bool {
 	for _, j := range s {
@@ -13,7 +13,7 @@ func IsPrintable(s string) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(IsPrintable("Hello"))
-	fmt.Println(IsPrintable("Hello\n"))
-}
+// func main() {
+// 	fmt.Println(IsPrintable("Hello"))
+// 	fmt.Println(IsPrintable("Hello\n"))
+// }
