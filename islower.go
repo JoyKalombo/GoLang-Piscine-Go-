@@ -4,7 +4,7 @@ package piscine
 
 // import "fmt"
 
-func IsLower(s string) bool {
+// func IsLower(s string) bool {
 	for _, j := range s {
 		if !(j >= 'a' && j <= 'z') {
 			return false
