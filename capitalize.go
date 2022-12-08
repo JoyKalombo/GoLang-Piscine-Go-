@@ -19,7 +19,7 @@ func Capitalize(s string) string {
 			storagestring = storagestring + string(rune(i))
 			count++
 		} else if count == 0 && (i >= 'a' && i <= 'z') {
-			storagestring = storagestring + string(rune(i))
+			storagestring = storagestring + string(rune(i-32))
 			count++
 		} else if count != 0 && (i >= 'A' && i <= 'Z') {
 			storagestring = storagestring + string(rune(i+32))
