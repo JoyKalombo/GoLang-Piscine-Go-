@@ -1,7 +1,8 @@
-// package main
-package piscine
+package main
 
-// import "fmt"
+// package piscine
+
+import "fmt"
 
 func Capitalize(s string) string {
 	var storagestring string = ""
@@ -17,10 +18,7 @@ func Capitalize(s string) string {
 		} else if count == 0 {
 			storagestring = storagestring + string(rune(i-32))
 			count++
-
-		} else if i >= 'A' && i <= 'Z' {
-			storagestring = storagestring + string(rune(i))
-		} else if count != 0 && (i >= 'A' && i <= 'Z'){
+		} else if count != 0 && (i >= 'A' && i <= 'Z') {
 			storagestring = storagestring + string(rune(i+32))
 		} else {
 			storagestring = storagestring + string(rune(i))
@@ -31,6 +29,6 @@ func Capitalize(s string) string {
 	return storagestring
 }
 
-// func main() {
-// 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
-// }
+func main() {
+	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+}
