@@ -17,7 +17,7 @@ func Capitalize(s string) string {
 			count++
 		} else if count == 0 && (i >= rune(33) && i <= rune(47)) || (i >= rune(58) && i <= rune(64)) || (i >= rune(91) && i <= rune(96)) || (i >= rune(123) && i <= rune(127)) {
 			storagestring = storagestring + string(rune(i))
-			count++
+			count = 0
 		} else if count != 0 && (i >= 'A' && i <= 'Z') {
 			storagestring = storagestring + string(rune(i+32))
 		} else {
