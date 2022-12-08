@@ -1,8 +1,8 @@
-package main
+// package main
 
-// package piscine
+package piscine
 
-import "fmt"
+// import "fmt"
 
 func Capitalize(s string) string {
 	var storagestring string = ""
@@ -29,6 +29,6 @@ func Capitalize(s string) string {
 	return storagestring
 }
 
-func main() {
-	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
-}
+// func main() {
+// 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+// }
