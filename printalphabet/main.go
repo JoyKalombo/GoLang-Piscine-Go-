@@ -8,3 +8,9 @@ func main() {
 	}
 	z01.PrintRune('\n')
 }
+// func main() {
+// 	fmt.Println(int('8' + '0'))
+// 	fmt.Println(int((rune(8))))
+// 	z01.PrintRune(rune(56))
+// 	z01.PrintRune('\n')
+// }
