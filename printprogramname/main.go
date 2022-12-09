@@ -10,7 +10,9 @@ func main() {
 	arguments := os.Args
 
 	for _, i := range arguments[0] {
-		z01.PrintRune(i)
+		if (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') {
+			z01.PrintRune(i)
+		}
 	}
 	z01.PrintRune('\n')
 }
