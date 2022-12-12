@@ -1,8 +1,8 @@
-package main
+// package main
 
-// package piscine
+package piscine
 
-import "fmt"
+// import "fmt"
 
 func ConcatParams(args []string) string {
 	emptystring := ""
@@ -14,15 +14,15 @@ func ConcatParams(args []string) string {
 
 	for i := range args {
 		if i == count-1 {
-			emptystring = result + args[i]
+			emptystring += args[i]
 		} else {
-			emptystring = result + args[i] + "\n"
+			emptystring += args[i] + "\n"
 		}
 	}
 	return emptystring
 }
 
-func main() {
-	test := []string{"Hello", "how", "are", "you?"}
-	fmt.Println(ConcatParams(test))
-}
+// func main() {
+// 	test := []string{"Hello", "how", "are", "you?"}
+// 	fmt.Println(ConcatParams(test))
+// }
