@@ -19,7 +19,7 @@ func ConcatParams(args []string) string {
 			emptystring = result + args[i] + "\n"
 		}
 	}
-	return result
+	return emptystring
 }
 
 func main() {
