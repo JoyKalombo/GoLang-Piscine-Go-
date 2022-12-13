@@ -42,7 +42,6 @@ func isWhiteSpace(r byte) bool {
 	return false
 }
 
-
 func main() {
 	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("Hello how are you?"))
 }
