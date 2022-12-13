@@ -1,33 +1,41 @@
 package main
 
-package piscine
+import (
+	"os"
 
-import
-(
-	"os.Args"
 	"github.com/01-edu/z01"
 )
 
 func printStr(s string) {
-	for _, r := range s {
-		z01.PrintRune(r)
+	arrayOfStrings := []rune(s)
+	for i := 0; i < len(arrayOfStrings); i++ {
+		z01.PrintRune(arrayOfStrings[i])
 	}
 	z01.PrintRune('\n')
 }
 
-func isEven(nbr int) boolean {
-	if even(nbr) == 1 {
-		return yes
+func even(nbr int) bool {
+	if nbr%2 == 0 {
+		return true
+	}
+	return false
+}
+
+func isEven(nbr int) bool {
+	if even(nbr) {
+		return true
 	} else {
-		return no
+		return false
 	}
 }
 
 func main() {
-	if isEven(lengthOfArg) == 1 {
+	lengthOfArg := len(os.Args[1:])
+	if isEven(lengthOfArg) {
+		EvenMsg := "I have another even number of arguments"
 		printStr(EvenMsg)
 	} else {
+		OddMsg := "I have an odd number of arguments"
 		printStr(OddMsg)
 	}
 }
-
