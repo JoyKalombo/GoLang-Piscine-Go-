@@ -1,9 +1,11 @@
-package main
+package piscine
 
-import (
-	"fmt"
-	"piscine"
-)
+// package main
+
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
 
 func SplitWhiteSpaces(str string) []string {
 	var arrayString []string
@@ -42,6 +44,6 @@ func isWhiteSpace(r byte) bool {
 	return false
 }
 
-func main() {
-	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("Hello how are you?"))
-}
+// func main() {
+// 	fmt.Printf("%#v\n", SplitWhiteSpaces("Hello how are you?"))
+// }
