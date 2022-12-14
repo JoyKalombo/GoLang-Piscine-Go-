@@ -19,7 +19,7 @@ func main() {
 		} else {
 			arr := make([]byte, 14)
 			file.Read(arr)
-			fmt.Printf(string(arr))
+			fmt.Println(string(arr))
 			file.Close()
 		}
 	} else {
