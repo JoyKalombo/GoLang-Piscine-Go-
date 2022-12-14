@@ -17,7 +17,7 @@ func main() {
 		if err != nil {
 			fmt.Printf("the mistake is : %v\n", err.Error())
 		} else {
-			arr := make([]byte, 78)
+			arr := make([]byte, 14)
 			file.Read(arr)
 			fmt.Printf(string(arr))
 			file.Close()
