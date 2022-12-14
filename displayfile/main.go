@@ -9,7 +9,7 @@ func main() {
 	if !(len(os.Args) <= 1) {
 		os.Args = os.Args[1:]
 	} else {
-		fmt.Printf("File name missing")
+		fmt.Printf("File name missing\n")
 		return
 	}
 	if len(os.Args) == 1 {
@@ -23,6 +23,6 @@ func main() {
 			file.Close()
 		}
 	} else {
-		fmt.Printf("Too many arguments")
+		fmt.Printf("Too many arguments\n")
 	}
 }
