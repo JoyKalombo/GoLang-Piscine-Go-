@@ -14,7 +14,7 @@ func main() {
 		for _, i := range os.Args {
 			file, err := os.Open(i)
 			if err != nil {
-				fmt.Println(err)
+				fmt.Println("the mistake is : %v\n", err.Error())
 				return
 			} else {
 				data := make([]byte, 443)
