@@ -22,7 +22,7 @@ func main() {
 				if len(os.Args) == 1 {
 					fmt.Println(string(data))
 				} else {
-					fmt.Println(str(data), "\n")
+					fmt.Println(string(data), "\n")
 				}
 				file.Close()
 			}
