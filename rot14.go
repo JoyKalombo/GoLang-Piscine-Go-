@@ -1,6 +1,6 @@
-// package main
+package main
 
-package piscine
+// package piscine
 
 import "github.com/01-edu/z01"
 
@@ -8,21 +8,21 @@ func Rot14(s string) string {
 	emptystring := ""
 	for _, i := range s {
 		if (i >= rune(65) && i <= rune(76)) || (i >= rune(97) && i <= rune(108)) {
-			emptystring += z01.PrintRune(i + 14)
+			emptystring += string(rune(i + 14))
 		} else if (i >= rune(77) && i <= rune(90)) || (i >= rune(109) && i <= rune(122)) {
-			emptystring += z01.PrintRune(i + 14 - 26)
+			emptystring += string(rune(i + 14 - 26))
 		} else {
-			emptystring += z01.PrintRune(i)
+			emptystring += string(rune(i))
 		}
 	}
 	return emptystring
 }
 
-// func main() {
-// 	result := Rot14("Hello! How are You?")
+func main() {
+	result := Rot14("Hello! How are You?")
 
-// 	for _, r := range result {
-// 		z01.PrintRune(r)
-// 	}
-// 	z01.PrintRune('\n')
-// }
+	for _, r := range result {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
+}
