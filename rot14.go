@@ -10,12 +10,15 @@ func Rot14(s string) string {
 			z01.PrintRune(i + 14)
 		} else if (i >= rune(77) && i <= rune(90)) || (i >= rune(109) && i <= rune(122)) {
 			z01.PrintRune(i + 14 - 26)
+		} else {
+			z01.PrintRune(i)
 		}
 	}
+	return ""
 }
 
 func main() {
-	result := piscine.Rot14("Hello! How are You?")
+	result := Rot14("Hello! How are You?")
 
 	for _, r := range result {
 		z01.PrintRune(r)
