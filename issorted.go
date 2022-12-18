@@ -5,20 +5,24 @@ package piscine
 // import "fmt"
 
 func IsSorted(f func(a, b int) int, a []int) bool {
-	for i := 0; i < len(a); i++ {
-		if i < len(a) {
-			for i := 0; i < len(a)-1; i++ {
-				if f(a[i], a[i+1]) > 0 {
-					return false
-				}
+	result := 1
+	result1 := 1
+	result2 := 1
+
+	for k, v := range a {
+		if k != len(a)-1 {
+			if f(v, a[k+1]) < 0 {
+				result++
 			}
-		} else if i == len(a) {
-			if f(a[i-1], a[i]) > 0 {
-				return false
+			if f(v, a[k+1]) > 0 {
+				result1++
+			}
+			if f(v, a[k+1]) == 0 {
+				result2++
 			}
 		}
 	}
-	return true
+	return result == len(a) || result1 == len(a) || result2 == len(a)
 }
 
 // func AscendingOrder(a, b int) int {
